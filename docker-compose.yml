@@ -1,0 +1,9 @@
+services:
+  flutter-dev:
+    build: .
+    container_name: "floating_ai_robo_plugins-dev"
+    tty: true
+    command: sleep infinity
+    network_mode: "host"
+    volumes:
+      - ./:/home/gitpod/workspace/floating_ai_robo_plugins
